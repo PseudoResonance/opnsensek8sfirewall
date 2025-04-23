@@ -1,0 +1,26 @@
+name: Update Helm Page Readme
+
+on:
+  push:
+    paths:
+      - "README.md"
+    branches:
+      - main
+
+jobs:
+  release:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Copy README.md
+        uses: planetoftheweb/copy-to-branches@v1.3
+        env:
+          key: main
+          branches: gh-pages
+          files: README.md LICENSE

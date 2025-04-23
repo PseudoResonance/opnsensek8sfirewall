@@ -4,6 +4,13 @@ A simple script, primarily designed for use with [Agones](https://agones.dev/) g
 
 Currently, OPNSense's firewall API is very poor and unfinished, so this script only attempts to configure aliases at the moment. The firewall rules and port forwards that point to these aliases still need to be added by hand.
 
+## Installation
+
+```sh
+helm repo add opnsensek8sfirewall https://pseudoresonance.github.io/opnsensek8sfirewall/
+helm install opnsensek8sfirewall opnsensek8sfirewall/opnsensek8sfirewall
+```
+
 ## Configuration
 
 A [sample config file](config.sample.json) is provided with sample configurations for running in a Kubernetes cluster.
