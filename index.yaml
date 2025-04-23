@@ -3,6 +3,17 @@ entries:
   opnsensek8sfirewall:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2025-04-23T11:53:32.358904413Z"
+    description: A script that listens for Agones K8s game servers, and updates an
+      OPNSense firewall to allow external access.
+    digest: da79d1809ad88c32e2cda13f2fbf51da3c811167fa321ed409803531c2755965
+    name: opnsensek8sfirewall
+    type: application
+    urls:
+    - https://github.com/PseudoResonance/opnsensek8sfirewall/releases/download/opnsensek8sfirewall-1.0.1/opnsensek8sfirewall-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2025-04-23T11:21:42.878753533Z"
     description: A script that listens for Agones K8s game servers, and updates an
       OPNSense firewall to allow external access.
@@ -12,4 +23,4 @@ entries:
     urls:
     - https://github.com/PseudoResonance/opnsensek8sfirewall/releases/download/opnsensek8sfirewall-1.0.0/opnsensek8sfirewall-1.0.0.tgz
     version: 1.0.0
-generated: "2025-04-23T11:21:42.878758773Z"
+generated: "2025-04-23T11:53:32.358918028Z"
