@@ -2,6 +2,8 @@ name: Release Charts
 
 on:
   push:
+    paths:
+      - "helm/**"
     branches:
       - main
 
