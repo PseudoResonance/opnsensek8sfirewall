@@ -1,0 +1,28 @@
+{
+	"opnsense": {
+		"endpoint": "http://10.0.0.1/api",
+		"apiKey": "KEY HERE",
+		"apiSecret": "SECRET HERE",
+		"categoryName": "managed"
+	},
+	"kubernetes": {
+		"searchDomain": "lab.internal"
+	},
+	"debugState": {
+		"nodes": [
+			{
+				"hostname": "server1",
+				"ports": [
+					{
+						"type": "TCP",
+						"port": 25565
+					},
+					{
+						"type": "UDP",
+						"port": 19132
+					}
+				]
+			}
+		]
+	}
+}

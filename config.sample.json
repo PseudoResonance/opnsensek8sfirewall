@@ -1,0 +1,10 @@
+{
+	"opnsense": {
+		"endpoint": "http://10.0.0.1/api",
+		"categoryName": "managed"
+	},
+	"kubernetes": {
+		"namespace": "game",
+		"searchDomain": "lab.internal"
+	}
+}

@@ -1,0 +1,14 @@
+**/.devcontainer/
+**/.git/
+**/.github/
+**/.vscode/
+**/doc/
+helm/
+**/.dockerignore
+**/.gitignore
+build.sh
+config.json
+config.sample.dev.json
+config.sample.json
+**/__pycache__/
+docker/Dockerfile

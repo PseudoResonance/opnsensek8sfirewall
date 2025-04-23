@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ printf "%s-%s" (include "opnsensek8sfirewall.fullname" .) "config" }}
+  labels:
+    {{- include "opnsensek8sfirewall.labels" . | nindent 4 }}
+data:
+  config.json: |
+    {
+      "opnsense": {
+        "endpoint": "{{ .Values.config.opnsense.endpoint }}",
+        "categoryName": "{{ .Values.config.opnsense.category }}"
+      },
+      "kubernetes": {
+        "namespace": "{{ .Values.config.searchNamespace }}",
+        "searchDomain": "{{ .Values.config.externalSearchDomain }}"
+      }
+    }
+

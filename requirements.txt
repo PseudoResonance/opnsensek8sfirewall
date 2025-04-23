@@ -1,0 +1,6 @@
+frozendict>=2.4.6
+# pyopnsense>=0.4.0
+pbr>=1.6 # Apache-2.0
+requests>=2.14.2 # Apache-2.0
+kubernetes_asyncio>=32.3.0
+uvicorn>=0.34.2
