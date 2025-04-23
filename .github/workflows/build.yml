@@ -4,6 +4,10 @@ name: Build Container Image
 # Configures this workflow to run every time a commit is pushed to main
 on:
   push:
+    paths-ignore:
+      - "helm/**"
+      - ".vscode/**"
+      - ".devcontainer/**"
     branches:
       - main
 
