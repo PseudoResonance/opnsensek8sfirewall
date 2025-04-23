@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  release:
+  helmPublish:
     permissions:
       contents: write
     runs-on: ubuntu-latest
